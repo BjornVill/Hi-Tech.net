@@ -20,67 +20,69 @@
 
     <header class="container">
 
-        <div>
+        <div class="accessibility">
             <div>
                 <p>Options d'affichage / accessibilité</p>
             </div>
             <ul class="list-inline">
                 <li class="list-inline-item">Thème :</li>
-                <li class="list-inline-item"><a href "#">sombre</a></li>
-                <li class="list-inline-item"><a href "#">contrasté</a></li>
-                <li class="list-inline-item"><a href "#">clair</a></li>
+                <li class="list-inline-item"><a href "#" class="txt-deco-none">sombre</a></li>
+                <li class="list-inline-item"><a href "#" class="txt-deco-none">contrasté</a></li>
+                <li class="list-inline-item"><a href "#" class="txt-deco-none">clair</a></li>
             </ul>
             <ul class="list-inline">
                 <li class="list-inline-item">Interlignage :</li>
-                <li class="list-inline-item"><a href "#">simple</a></li>
-                <li class="list-inline-item"><a href "#">augmenté</a></li>
+                <li class="list-inline-item"><a href "#" class="txt-deco-none">simple</a></li>
+                <li class="list-inline-item"><a href "#" class="txt-deco-none">augmenté</a></li>
             </ul>
         </div>
 
-        <div>
-            <div>
+        <div class="logo-zone">
+            <div class="logo-title">
                 <div>
-                    <img src="images/logo.svg" class="img-fluid" alt="shop logo"></img>
+                    <img src="images/logo.svg" class="img-fluid img-logo" alt="shop logo"></img>
                 </div>
-                <h1>Hi-Tech.NET</h1>
+                <p class="h1">Hi-Tech.NET</p>
                 <p>Tout le matériel High-Tech</p>
             </div>
-            <div>
-                <i class="icon-user"></i>
-                <p>Mon compte</p>
-            </div>
-            <div>
-                <i class="icon-cart"></i>
-                <p>Mon panier</p>
+            <div class="d-flex">
+                <div class="vertical-align-icon">
+                    <i class="icon-user"></i>
+                    <p>Mon compte</p>
+                </div>
+                <div class="vertical-align-icon">
+                    <i class="icon-cart"></i>
+                    <p>Mon panier</p>
+                </div>
             </div>
         </div>
 
-        <div>
-            <div>
+        <nav class="nav-objects">
+            <a href="#" class="horizontal-align-icon">
                 <i class="icon-display"></i>
-                <p>Ordinateurs</p>
-            </div>
-            <div>
+                <span>Ordinateurs</span>
+            </a>
+            <a href="#" class="horizontal-align-icon">
                 <i class="icon-data"></i>
-                <p>Périphériques et composants</p>
-            </div>
-            <div>
+                <span>Périphériques et composants</span>
+            </a>
+            <a href="#" class="horizontal-align-icon">
                 <i class="icon-phone"></i>
-                <p>Téléphones</p>
-            </div>
-            <div>
+                <span>Téléphones</span>
+            </a>
+            <a href="#" class="horizontal-align-icon">
                 <i class="icon-clock"></i>
-                <p>Objets connectés</p>
-            </div>
-        </div>
+                <span>Objets connectés</span>
+            </a>
+        </nav>
 
     </header>
 
-    <main class="container">
+    <main class="container main">
 
         <div>
             <p>AOC 24B1XHS</p>
-            <div>
+            <div class="summary">
                 <a href "#">Présentation</a>
                 <a href="#">Descriptif</a>
                 <a href="#">Caractéristiques techniques</a>
@@ -90,38 +92,38 @@
         <div>
             <p>Présentation</p>
 
-            <div>
-                <span>1920 x 1080 pixels</span>
-                <span>7 ms</span>
-                <span>Format large 16/9</span>
-                <span>Dalle IPS</span>
-                <span>HDMI</span>
-                <span>VGA</span>
-                <span>Noir</span>
+            <div class="container-tags">
+                <p class="tags">1920 x 1080 pixels</p>
+                <p class="tags">7 ms</p>
+                <p class="tags">Format large 16/9</p>
+                <p class="tags">Dalle IPS</p>
+                <p class="tags">HDMI</p>
+                <p class="tags">VGA</p>
+                <p class="tags">Noir</p>
             </div>
 
-            <div>
-                <div>
-                    <img src="images/product/slide-1-lg.jpg" class="img-fluid" alt="image principale objet"></img>
-                </div>
-                <div>
-                    <p>Photos non contractuelles</p>
-                    <div>
-                        <div>
-                            <img src="images/product/slide-1-md.jpg" class="img-fluid" alt="image principale objet">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                        <!-- slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"> <img src="images/product/slide-1-md.jpg" class="img-fluid" alt="image principale objet"> </div>
+                            <div class="carousel-item"> <img src="images/product/slide-2-md.jpg" class="img-fluid" alt="image principale objet"> </div>
+                            <div class="carousel-item"> <img src="images/product/slide-3-md.jpg" class="img-fluid" alt="image principale objet"> </div>
+                            <div class="carousel-item"> <img src="images/product/slide-4-md.jpg" class="img-fluid" alt="image principale objet"> </div>
+                            <div class="carousel-item"> <img src="images/product/slide-5-md.jpg" class="img-fluid" alt="image principale objet"> </div>
                         </div>
-                        <div>
-                            <img src="images/product/slide-2-md.jpg" class="img-fluid" alt="image principale objet">
-                        </div>
-                        <div>
-                            <img src="images/product/slide-3-md.jpg" class="img-fluid" alt="image principale objet">
-                        </div>
-                        <div>
-                            <img src="images/product/slide-4-md.jpg" class="img-fluid" alt="image principale objet">
-                        </div>
-                        <div>
-                            <img src="images/product/slide-5-md.jpg" class="img-fluid" alt="image principale objet">
-                        </div>
+
+                        <!-- Left right --><a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a>
+                        <p>Photos non contractuelles</p>
+                        <!-- Thumbnails -->
+                        <ol class="carousel-indicators list-inline">
+                            <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="images/product/slide-1-md.jpg" class="img-fluid" alt="image principale objet"> </a> </li>
+                            <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="images/product/slide-2-md.jpg" class="img-fluid" alt="image principale objet"> </a> </li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="images/product/slide-3-md.jpg" class="img-fluid" alt="image principale objet"> </a> </li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="images/product/slide-4-md.jpg" class="img-fluid" alt="image principale objet"> </a> </li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="4" data-target="#custCarousel"> <img src="images/product/slide-5-md.jpg" class="img-fluid" alt="image principale objet"> </a> </li>
+                        </ol>
                     </div>
                 </div>
             </div>
@@ -129,18 +131,18 @@
             <div>
                 <p>Marque:AOC</p>
 
-                <div>
-                    <div>
+                <div class="box-general-price">
+                    <div class="price-n-button">
                         <div>
                             <p>109€94</p>
                             <p>dont éco-participation 1€70</p>
                         </div>
-                        <div>
-                            <button>Ajouter au panier</button>
-                            <button>Ajouter à ma liste d'envie</button>
+                        <div class="buttons">
+                            <button class="add-cart">Ajouter au panier</button>
+                            <button class="add-list">Ajouter à ma liste d'envie</button>
                         </div>
                     </div>
-                    <div>
+                    <div class="warranty">
                         <p>Garantie : 2 années vendeur</p>
                     </div>
                 </div>
@@ -172,8 +174,8 @@
 
             <div>
                 <p>Un moniteur Full HD performant et tout en finesse</p>
-                <div>
-                    <img src="images/product/screen.png" class="img-fluid" alt=""></img>
+                <div class="dimension-object">
+                    <img src="images/product/screen.png" class="img-fluid img-dimension" alt=""></img>
                 </div>
                 <p>Issu de la série B1, le moniteur AOC 24B1XHS dispose de tous les atouts indispensables pour offrir une expérience utilisateur agréable. Son écran Full HD de 23.8" s'accompagne d'une dalle IPS ainsi que d'un temps de réponse de 7 ms pour
                     une image toujours performante. Aussi, le 24B1XHS séduit par son profil plat et son design sans contour qui favorise le plaisir visuel et l'immersion. Ce moniteur WLED trouvera facilement une place de choix sur votre bureau pour toutes
@@ -182,7 +184,7 @@
 
             <div>
                 <p>Appréciez le design sans contour</p>
-                <div>
+                <div class="img-center">
                     <img src="images/product/desc-1.jpg" class="img-fluid" alt=""></img>
                 </div>
                 <p>En plus du look moderne et attrayant qu'il procure, le design sans contour permet des configurations à plusieurs écrans sans interruption. Votre curseur, vos fenêtres ne sont plus perdus dans les abysses sombres des contours lorsque plusieurs
@@ -192,7 +194,7 @@
 
             <div>
                 <p>Tout le confort nécessaire</p>
-                <div>
+                <div class="img-center">
                     <img src="images/product/desc-2.jpg" class="img-fluid" alt=""></img>
                 </div>
                 <p>Agréable visuellement et intuitif, ce moniteur dispose également d'une dalle IPS. Cette dernière reproduit des couleurs éclatantes et offre de très larges angles de vue. De cette façon, les images gardent toujours un excellent aspect et
@@ -206,7 +208,7 @@
 
             <p>Caractéristiques techniques</p>
 
-            <div>
+            <div class="tables">
                 <p>Affichage</p>
                 <table>
                     <tr>
@@ -280,7 +282,7 @@
                 </table>
             </div>
 
-            <div>
+            <div class="tables">
                 <p>Ecran</p>
                 <table>
                     <tr>
@@ -318,7 +320,7 @@
                 </table>
             </div>
 
-            <div>
+            <div class="tables">
                 <p>Ergonomie</p>
                 <table>
                     <tr>
@@ -348,7 +350,7 @@
                 </table>
             </div>
 
-            <div>
+            <div class="tables">
                 <p>Connectique</p>
                 <table>
                     <tr>
@@ -366,7 +368,7 @@
                 </table>
             </div>
 
-            <div>
+            <div class="tables">
                 <p>Multimédia</p>
                 <table>
                     <tr>
@@ -384,7 +386,7 @@
                 </table>
             </div>
 
-            <div>
+            <div class="tables">
                 <p>Caractéristiques physiques</p>
                 <table>
                     <tr>
@@ -414,7 +416,7 @@
                 </table>
             </div>
 
-            <div>
+            <div class="tables">
                 <p>Alimentation</p>
                 <table>
                     <tr>
@@ -438,36 +440,36 @@
 
     <footer class="container">
 
-        <div>
-            <div>
+        <nav class="nav-objects">
+            <a href="#" class="horizontal-align-icon">
                 <i class="icon-display"></i>
-                <p>Ordinateurs</p>
-            </div>
-            <div>
+                <span>Ordinateurs</span>
+            </a>
+            <a href="#" class="horizontal-align-icon">
                 <i class="icon-data"></i>
-                <p>Périphériques et composants</p>
-            </div>
-            <div>
+                <span>Périphériques et composants</span>
+            </a>
+            <a href="#" class="horizontal-align-icon">
                 <i class="icon-phone"></i>
-                <p>Téléphones</p>
-            </div>
-            <div>
+                <span>Téléphones</span>
+            </a>
+            <a href="#" class="horizontal-align-icon">
                 <i class="icon-clock"></i>
-                <p>Objets connectés</p>
-            </div>
-        </div>
+                <span>Objets connectés</span>
+            </a>
+        </nav>
 
-        <div>
-            <div>
+        <div class='second-part-footer'>
+            <div class='payment'>
                 <p>Moyen de paiement</p>
                 <div>
-                    <img src="images/payment.png"></img>
+                    <img src="images/payment.png" class="img-fluid"></img>
                 </div>
             </div>
 
             <div>
                 <p>Sur les réseaux sociaux</p>
-                <div>
+                <div class="net-icons">
                     <div>
                         <i class="icon-facebook"></i>
                     </div>
@@ -483,9 +485,9 @@
                 </div>
             </div>
 
-            <div>
+            <div class="about">
                 <p>A propos</p>
-                <div>
+                <div class="about">
                     <a href="">Qui sommes nous ?</a>
                     <a href="">Nos services</a>
                     <a href="">Contactez-nous</a>

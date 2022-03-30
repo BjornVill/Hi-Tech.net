@@ -1,5 +1,153 @@
 body {
   margin: auto;
-  max-width: 1140px; }
+  max-width: 1140px;
+  font-family: Open Sans;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #555; }
+  body .container {
+    padding-left: 0;
+    padding-right: 0; }
+  body header {
+    background: #e2f7ff; }
+    body header .accessibility,
+    body header .logo-title,
+    body header .vertical-align-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    body header .txt-deco-none {
+      text-decoration: none;
+      color: #0c6588; }
+    body header .img-logo {
+      width: 5rem; }
+    body header .logo-zone {
+      width: 100%;
+      background-image: url("../images/header.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #e2f7ff; }
+    body header .nav-objects {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    body header .horizontal-align-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #0c6588; }
+  body .main {
+    width: 90%;
+    margin: auto;
+    background: #fff; }
+    body .main .summary {
+      display: flex;
+      flex-direction: column; }
+    body .main .container-tags {
+      display: flex;
+      flex-wrap: wrap; }
+      body .main .container-tags .tags {
+        background: #eee;
+        padding: 0.2em 1em;
+        border-radius: 0.2em;
+        margin: 0.2em 0.5em; }
+    body .main .row .carousel-control-prev,
+    body .main .row .carousel-control-next {
+      display: none; }
+    body .main .row .carousel-indicators {
+      height: 6rem; }
+    body .main .row .carousel-inner img {
+      width: 100%;
+      height: 100%; }
+    body .main .row #custCarousel .carousel-indicators {
+      position: static;
+      margin-top: 20px; }
+    body .main .row #custCarousel .carousel-indicators > li {
+      width: 100px; }
+    body .main .row #custCarousel .carousel-indicators li img {
+      display: block;
+      opacity: 0.5; }
+    body .main .row #custCarousel .carousel-indicators li.active img {
+      opacity: 1; }
+    body .main .row #custCarousel .carousel-indicators li:hover img {
+      opacity: 0.75; }
+    body .main .row .carousel-item img {
+      width: 80%; }
+    body .main .price-n-button {
+      background: #eee;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+    body .main .warranty {
+      background: lightgrey; }
+    body .main .buttons {
+      display: flex;
+      flex-direction: column; }
+    body .main .dimension-object {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #eee; }
+      body .main .dimension-object .img-dimension {
+        width: 85%; }
+    body .main .img-center {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    body .main .tables {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body .main .tables table {
+        border: 1px solid #eee;
+        width: 80%; }
+        body .main .tables table tr,
+        body .main .tables table td {
+          border: 1px solid #eee;
+          width: 40%; }
+  body footer {
+    background-image: url("../images/footer.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    body footer .nav-objects {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #e2f7ff; }
+      body footer .nav-objects .horizontal-align-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #0c6588; }
+    body footer .second-part-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body footer .second-part-footer .payment {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      body footer .second-part-footer .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      body footer .second-part-footer .net-icons {
+        display: flex;
+        justify-content: space-evenly; }
 
 /*# sourceMappingURL=style.css.map */

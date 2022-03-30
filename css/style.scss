@@ -38,8 +38,195 @@ $shadows-lg:0 0 5px rgba(0, 0, 0, 0.4);
 $shadows-xl:0 10px 20px rgba(0, 0, 0, 0.5);
 
 // ---------------------MIXIN------------------------------------------------------
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-decoration-none {
+    text-decoration: none;
+    color: $color-background-header;
+}
+
+
 // ---------------------CODE------------------------------------------------------
 body {
     margin: auto;
     max-width: $max-width-container;
+    font-family: $font-default;
+    font-size: $font-size-default;
+    line-height: $line-height;
+    color: $color-text;
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    header {
+        background: $color-background-menu;
+        .accessibility,
+        .logo-title,
+        .vertical-align-icon {
+            @include flex-column;
+        }
+        .txt-deco-none {
+            @include text-decoration-none;
+        }
+        .img-logo {
+            width: 5rem;
+        }
+        .logo-zone {
+            width: 100%;
+            background-image: url('../images/header.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include flex-column;
+            color: $color-background-menu;
+        }
+        .nav-objects {
+            @include flex-column;
+
+        }
+        .horizontal-align-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include text-decoration-none;
+        }
+    }
+
+    .main {
+        width: 90%;
+        margin: auto;
+        background: $color-background-main;
+        .summary {
+            display: flex;
+            flex-direction: column;
+        }
+        .container-tags {
+            display: flex;
+            flex-wrap: wrap;
+            .tags {
+                background: $color-grey-elements;
+                padding: 0.2em 1em;
+                border-radius: 0.2em;
+                margin: 0.2em 0.5em;
+            }
+        }
+        .row {
+            .carousel-control-prev,
+            .carousel-control-next {
+                display: none;
+            }
+            .carousel-indicators {
+                height: 6rem;
+            }
+            .carousel-inner img {
+                width: 100%;
+                height: 100%
+            }
+
+            #custCarousel .carousel-indicators {
+                position: static;
+                margin-top: 20px
+            }
+
+            #custCarousel .carousel-indicators>li {
+                width: 100px
+            }
+
+            #custCarousel .carousel-indicators li img {
+                display: block;
+                opacity: 0.5
+            }
+
+            #custCarousel .carousel-indicators li.active img {
+                opacity: 1
+            }
+
+            #custCarousel .carousel-indicators li:hover img {
+                opacity: 0.75
+            }
+
+            .carousel-item img {
+                width: 80%
+            }
+        }
+        .price-n-button {
+            background: $color-grey-elements;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .warranty {
+            background: lightgrey;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+        }
+        .dimension-object {
+            @include flex;
+            border: $border-sm;
+            .img-dimension {
+                width: 85%;
+            }
+        }
+        .img-center {
+            @include flex;
+        }
+        .tables {
+            @include flex-column;
+            table {
+                border: $border-sm;
+                width: 80%;
+                tr,
+                td {
+                    border: $border-sm;
+                    width: 40%;
+                }
+            }
+        }
+    }
+    footer {
+        background-image: url('../images/footer.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .nav-objects {
+            @include flex-column;
+            background: $color-background-menu;
+            .horizontal-align-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include text-decoration-none;
+            }
+        }
+
+        .second-part-footer {
+            @include flex-column;
+            .payment {
+                @include flex-column;
+            }
+            .about {
+                @include flex-column;
+            }
+            .net-icons {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+
+    }
+
 }
